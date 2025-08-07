@@ -41,7 +41,7 @@ export default function Header () {
         ${isMenuOpen ? 'block' : 'hidden'} 
         md:block // O menu deve estar sempre visível em telas grandes
         absolute md:static top-[100px] left-0 w-full md:w-auto p-4 md:p-0 
-        bg-[#1618028C] md:bg-transparent rounded-b-3xl border-t md:border-none border-gray-700 
+        bg-[#0f0f0f] md:bg-transparent rounded-b-3xl border-t md:border-none border-gray-700 
         flex-col md:flex-row shadow-lg md:shadow-none
       `}>
         <Button className='bg-transparent text-white'>Fazer login</Button>
