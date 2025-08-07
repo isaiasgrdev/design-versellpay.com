@@ -124,6 +124,8 @@ export default function Home() {
                         <img src="https://versellpay.com/wp-content/uploads/2024/10/Group-7561-1024x619.webp" className="h-auto max-w-[400px] w-full"/>
                     </Container>
                 </div>
+
+                <span></span>
             </div>
           </section>
 
