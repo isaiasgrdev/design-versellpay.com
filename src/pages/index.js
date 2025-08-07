@@ -125,7 +125,7 @@ export default function Home() {
                     </Container>
                 </div>
 
-                <span></span>
+                
             </div>
           </section>
 
