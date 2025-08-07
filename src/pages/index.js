@@ -116,24 +116,23 @@ export default function Home() {
                         <p className="font-bold text-white">Estes são instrumentos poderosos para maximizar cada venda.</p>
                     </Container>
 
-                    <Container className={'col-span-2 p-5 flex-row w-full items-center justify-center py-5 bg-[#202020] rounded-xl max-[1000px]:grid-cols-1'}>
-                        <span className="flex flex-col gap-3 text-xl">
+                    <Container className={'flex-row justify-center items-center col-span-2 p-5 w-full py-5 bg-[#202020] rounded-xl max-[1000px]:col-span-1 max-[1000px]:flex-col'}>
+                        <span className="flex flex-col gap-3 text-xl max-[700px]:items-center">
                             <p className="font-bold text-white">Com a Versell, cada aspecto do seu processo de pagamento é pensado para impulsionar o crescimento e a eficiência do seu negócio.</p>
                             <Button className={'bg-[#BCCF00] text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
                         </span>
                         <img src="https://versellpay.com/wp-content/uploads/2024/10/Group-7561-1024x619.webp" className="h-auto max-w-[400px] w-full"/>
                     </Container>
                 </div>
-
                 
             </div>
           </section>
 
-          <section className="flex mx-auto h-full w-full bg-black justify-center items-center my-[150px]"> 
-              <div class="flex flex-row max-w-[1100px] justify-center items-center flex-grow self-stretch gap-[68px] transition-colors duration-300 border border-solid border-[#BCCF00] rounded-[24px] p-[59px] z-0">
+          <section className="flex mx-auto h-full w-full bg-black justify-center items-center"> 
+              <div class="flex flex-row max-w-[1100px] justify-center items-center flex-grow self-stretch transition-colors duration-300 border border-solid border-[#BCCF00] rounded-[24px] p-5 gap-5 z-0 m-3 max-[750px]:flex-col">
                   <Title>Fatura mais de R$50 mil por mês?</Title>
                   <p className="font-bold text-white text-xl max-w-[300px]">Fale com um Gerente VIP. Temos taxas e benefícios exclusivas para seu negócio.</p>
-                  <Button className={'bg-[#BCCF00] text-black w-[200px] h-[60px] font-medium text-xl'}>Falar com gerente</Button>
+                  <Button className={'bg-[#BCCF00] w-[200px] h-[60px] text-black font-medium text-xl'}>Falar com gerente</Button>
               </div>
           </section>
         </div>
