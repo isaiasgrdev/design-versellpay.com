@@ -3,8 +3,11 @@ import Container from "@/components/container";
 import Header from "@/components/header";
 import { Title } from "@/components/title";
 import Head from "next/head";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faPix} from "@fortawesome/free-brands-svg-icons";
+import { faCheckCircle, faCreditCard} from "@fortawesome/free-regular-svg-icons";
+import {  faBarcode, faCircleDollarToSlot, faCoins, faIdCard, faRotate, faSackDollar, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { CardIcon } from "@/components/icon";
 
 export default function Home() {
 
@@ -24,9 +27,9 @@ export default function Home() {
           <section className="flex mx-auto h-full w-full bg-black justify-center items-center my-[150px]"> 
             <div className="w-full max-w-[1100px] flex gap-3 justify-between items-center m-3 max-[770px]:flex-col-reverse">
                 <Container>
-                  <Title className="font-bold text-5xl text-white max-[385px]:text-3xl">Receba no <span className="text-[#BCCF00]">PIX</span> e no <span className="text-[#BCCF00]">cartão</span>. Sem <span className="text-[#BCCF00]!">enrolação</span>. Sem <span className="text-[#BCCF00]">bloqueios</span>.</Title>
-                  <Button className={'bg-[#BCCF00] text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
-                  <p className="font-medium text-3xl text-white max-[385px]:text-2xl">Aumente suas <span className="text-[#BCCF00]">vendas</span> com uma <span className="text-[#BCCF00]">Api de pagamentos</span> feita para quem precisa de <span className="text-[#BCCF00]">velocidade</span>, <span className="text-[#BCCF00]">liberdade</span> e <span className="text-[#BCCF00]">dinheiro</span> no bolso.</p>
+                  <Title className="font-bold text-5xl text-white max-[385px]:text-3xl">Receba no <span className="text-purple-600">PIX</span> e no <span className="text-purple-600">cartão</span>. Sem <span className="text-purple-600!">enrolação</span>. Sem <span className="text-purple-600">bloqueios</span>.</Title>
+                  <Button className={'bg-purple-600 text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
+                  <p className="font-medium text-3xl text-white max-[385px]:text-2xl">Aumente suas <span className="text-purple-600">vendas</span> com uma <span className="text-purple-600">Api de pagamentos</span> feita para quem precisa de <span className="text-purple-600">velocidade</span>, <span className="text-purple-600">liberdade</span> e <span className="text-purple-600">dinheiro</span> no bolso.</p>
                 </Container>
                 <img src="https://versellpay.com/wp-content/uploads/2024/10/versell.webp" className="max-w-[420px] w-full h-auto"/>
             </div>
@@ -34,31 +37,31 @@ export default function Home() {
 
           <section className="flex flex-col mx-auto h-full w-full bg-[#0F0F0F] justify-center items-center pt-8 pb-[200px] relative"> 
             <div className="w-full h-full max-w-[1100px] flex flex-col gap-5 justify-center items-center text-center mx-3">
-                <p className="max-w-[700px] font-medium text-2xl text-white">Redefina a maneira como você acessa os ganhos de suas vendas com nossa <span className="text-[#BCCF00]">solução de pagamentos online</span>.</p>
+                <p className="max-w-[700px] font-medium text-2xl text-white">Redefina a maneira como você acessa os ganhos de suas vendas com nossa <span className="text-purple-600">solução de pagamentos online</span>.</p>
                 <div className="m-3 grid grid-cols-3 items-center justify-between gap-5 max-[590px]:grid-cols-2 max-[410px]:grid-cols-1">
                     <Container className={'max-w-[320px]'}>
-                        <img className="max-w-[60px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/Cartao.svg"/>
-                        <Title className="font-bold text-2xl text-[#BCCF00]">Cartão de crédito (D+2)</Title>
+                        <CardIcon icon={faCreditCard} />
+                        <Title className="font-bold text-2xl text-purple-600">Cartão de crédito (D+2)</Title>
                         <p className="font-bold text-white">Receba em D+2 vendas de cartão, e mantenha sua operação girando.</p>                       
                     </Container>
                     <Container className={'max-w-[320px]'}>
-                        <img className="max-w-[60px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/pix.svg"/>
-                        <Title className="font-bold text-2xl text-[#BCCF00]">Pix (D+0)</Title>
+                        <CardIcon icon={faPix} />
+                        <Title className="font-bold text-2xl text-purple-600">Pix (D+0)</Title>
                         <p className="font-bold text-white">Receba na hora o dinheiro dos pagamentos feitos por PIX.</p>                       
                     </Container>
                     <Container className={'max-w-[320px]'}>
-                        <img className="max-w-[60px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/boleto.svg"/>
-                        <Title className="font-bold text-2xl text-[#BCCF00]">Boleto (D+0)</Title>
+                        <CardIcon icon={faBarcode} />
+                        <Title className="font-bold text-2xl text-purple-600">Boleto (D+0)</Title>
                         <p className="font-bold text-white">Receba o dinheiro na mesma hora que o boleto for compensado.</p>                       
                     </Container>
                 </div>
-                <Button className={'bg-[#BCCF00] text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
+                <Button className={'bg-purple-600 text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
             </div>
 
             <section class="bg-white max-w-[1100px] absolute bottom-[100px] flex flex-row justify-center items-center gap-10 overflow-hidden rounded-[16px] shadow-[0px_0px_48px_-16px_rgba(0,0,0,0.26)] mt-10 mb-[-238px] py-11 px-11 z-100 transition-all duration-300 max-[970px]:flex-col max-[970px]:relative">
               <img className='w-full max-w-[450px] h-full' src="https://versellpay.com/wp-content/uploads/2024/08/Ativo-2.svg"/>
               <div>
-                  <Title className="font-bold text-[#102539] text-3xl">Sobre a <span className="text-[#BCCF00]">Versell</span></Title>
+                  <Title className="font-bold text-[#102539] text-3xl">Sobre a <span className="text-purple-600">Versell</span></Title>
                   <p className="font-medium text-[#102539]">Nosso objetivo é oferecer soluções de pagamento dinâmicas e personalizadas, focadas exatamente no que o nosso cliente precisa e no momento em que precisa.</p>
                   <p className="font-medium text-[#102539]">Somos uma plataforma PRÓPRIA trazendo mais SEGURANÇA para você seller escalar sua operação sem saques travados ou correr o risco de uma plataforma qualquer sumir com seu dinheiro.</p>
               </div>
@@ -69,50 +72,50 @@ export default function Home() {
             <div className="w-full max-w-[1100px] flex gap-3 justify-center flex-col items-center m-3">
                 <Title>Conheça nossos beneficios</Title>
                 <div className="w-full m-3 grid grid-cols-3 items-center justify-center gap-5 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1">
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/carrinho.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faShoppingCart} />
                         <Title>Checkout Personalizado</Title>
                         <p className="font-bold text-white">Customize seu checkout para que ele reflita a identidade da sua marca.</p>                       
                         <p className="font-bold text-white">Transmita confiança aos seus clientes e impulsione as taxas de conversão.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/aprovacao.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faCircleDollarToSlot} />
                         <Title>Taxa de Aprovação de 97%</Title>
                         <p className="font-bold text-white">Com o nosso avançado sistema de multiadquirência, a Versell atinge uma impressionante taxa de aprovação de 97%.</p>                       
                         <p className="font-bold text-white">Isso significa mais transações bem-sucedidas e menos frustrações para o seu negócio.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/carrinho.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faIdCard} />
                         <Title>Recebimento Cartão em D+2:</Title>
                         <p className="font-bold text-white">Na Versell, entendemos a importância de um fluxo de caixa eficiente.</p>                       
                         <p className="font-bold text-white">Com nossos pagamentos em D+2 para vendas no cartão, ajudamos a manter sua operação girando suavemente.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/chargeback.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faRotate} />
                         <Title>Sistema de Pré-chargeback</Title>
                         <p className="font-bold text-white">Nossa abordagem proativa ao gerenciamento de pré-chargebacks minimiza significativamente as disputas.</p>                       
                         <p className="font-bold text-white">Com a Versell, você tem a vantagem de resolver questões de reembolso antes que se transformem em chargebacks, mantendo baixas taxas e otimizando o atendimento ao cliente.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/pix.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faPix} />
                         <Title>Recebimento PIX em D+0</Title>
                         <p className="font-bold text-white">Agilidade é fundamental, e com a Versell, os pagamentos via PIX são recebidos instantaneamente.</p>                       
                         <p className="font-bold text-white">Aproveite a eficiência de ter seu dinheiro disponível no mesmo dia e escale suas campanhas.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/saque.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faCoins} />
                         <Title>Saque Instantâneo</Title>
                         <p className="font-bold text-white">Na Versell, seu dinheiro está disponível imediatamente após solicitar um saque.</p>                       
                         <p className="font-bold text-white">A rapidez na liquidez é mais um de nossos compromissos com o sucesso do seu negócio.</p>                       
                     </Container>
 
-                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-[#BCCF0026] rounded-xl'}>
-                        <img className="max-w-[70px] h-auto mb-3" src="https://versellpay.com/wp-content/uploads/2024/08/Upsell.svg"/>
+                    <Container className={'w-full p-5 bg-[#0f0f0f] border border-purple-600 rounded-xl'}>
+                        <CardIcon icon={faSackDollar} />
                         <Title>Upsell e Order Bumps</Title>
                         <p className="font-bold text-white">Com os recursos de upsell e order bumps da Versell, nossos clientes veem um aumento de até 25% no faturamento.</p>                       
                         <p className="font-bold text-white">Estes são instrumentos poderosos para maximizar cada venda.</p>
@@ -121,7 +124,7 @@ export default function Home() {
                     <Container className={'flex-row justify-center items-center col-span-2 p-5 w-full py-5 bg-[#202020] rounded-xl max-[1000px]:col-span-1 max-[1000px]:flex-col'}>
                         <span className="flex flex-col gap-3 text-xl max-[700px]:items-center">
                             <p className="font-bold text-white">Com a Versell, cada aspecto do seu processo de pagamento é pensado para impulsionar o crescimento e a eficiência do seu negócio.</p>
-                            <Button className={'bg-[#BCCF00] text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
+                            <Button className={'bg-purple-600 text-black w-[200px] h-[60px] font-medium text-xl'}>Comece a vender!</Button>
                         </span>
                         <img src="https://versellpay.com/wp-content/uploads/2024/10/Group-7561-1024x619.webp" className="h-auto max-w-[400px] w-full"/>
                     </Container>
@@ -131,10 +134,10 @@ export default function Home() {
           </section>
 
           <section className="flex mx-auto h-full w-full bg-black justify-center items-center"> 
-              <div className="flex flex-row max-w-[1100px] justify-center items-center flex-grow self-stretch transition-colors duration-300 border border-solid border-[#BCCF00] rounded-[24px] p-5 gap-5 z-0 m-3 max-[750px]:flex-col">
+              <div className="flex flex-row max-w-[1100px] justify-center items-center flex-grow self-stretch transition-colors duration-300 border border-solid border-purple-600 rounded-[24px] p-5 gap-5 z-0 m-3 max-[750px]:flex-col">
                   <Title>Fatura mais de R$50 mil por mês?</Title>
                   <p className="font-bold text-white text-xl max-w-[300px]">Fale com um Gerente VIP. Temos taxas e benefícios exclusivas para seu negócio.</p>
-                  <Button className={'bg-[#BCCF00] w-[200px] h-[60px] text-black font-medium text-xl'}>Falar com gerente</Button>
+                  <Button className={'bg-purple-600 w-[200px] h-[60px] text-black font-medium text-xl'}>Falar com gerente</Button>
               </div>
           </section>
 

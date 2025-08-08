@@ -44,8 +44,8 @@ export default function Header () {
         bg-[#0f0f0f] md:bg-transparent rounded-b-3xl border-t md:border-none border-gray-700 
         flex-col md:flex-row shadow-lg md:shadow-none
       `}>
-        <Button className='bg-transparent text-white'>Fazer login</Button>
-        <Button className='bg-transparent text-white border border-[#BCCF00] hover:text-black hover:bg-[#BCCF00]'>Criar conta</Button>
+        <Button className='w-[200px] bg-transparent text-white'>Fazer login</Button>
+        <Button className=' w-[200px] bg-transparent text-white border border-purple-600 hover:text-black hover:bg-purple-600'>Criar conta</Button>
       </nav>
       
     </header>
