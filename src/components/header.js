@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { Button } from './button'; 
+import logoWiinpay from '@/assets/wiinpay.png'
+import Image from 'next/image';
 
 export default function Header () {
   // Estado para controlar se o menu está aberto ou fechado.
@@ -13,10 +15,10 @@ export default function Header () {
       
       {/* Logo */}
       <a href="/" className="flex-shrink-0">
-        <img 
-          src="https://versellpay.com/wp-content/uploads/2024/08/logo-versell.svg" 
-          alt="Logotipo da Versell Pay" 
-          className="w-[150px] h-auto"
+        <Image 
+          src={logoWiinpay} 
+          alt="Logotipo da WiinPay"
+          className="w-[80px] h-auto"
         />
       </a>
 

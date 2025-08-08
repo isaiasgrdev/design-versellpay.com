@@ -12,7 +12,7 @@ export function Button ({children, className, ...props}){
 
 export default function ButtonLInk ({className, link, icon, ...props}){
     return(
-        <span className={twMerge("w-7 h-7 rounded-sm bg-[#0f0f0f] flex items-center justify-center")} {...props}>
+        <span className={twMerge("w-7 h-7 rounded-sm bg-[#0f0f0f] flex items-center justify-center text-3xl")} {...props}>
             <a href={link}>
                 <FontAwesomeIcon icon={icon} color="#9810fa"/>
             </a>
